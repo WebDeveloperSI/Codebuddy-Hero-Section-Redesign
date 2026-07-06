@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CodeBuddy — Breaking Down Barriers to Software Development</title>
+  <meta name="description" content="You bring the ideas and business expertise. CodeBuddy provides the software canvas, expert engineers, and development tools to transform your vision into reliable software—faster, smarter, and with confidence." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <section class="hero">
+    <!-- Environment -->
+    <div class="bg-aurora" aria-hidden="true"></div>
+    <div class="bg-grid" aria-hidden="true"></div>
+    <div class="ambient ambient--emerald" aria-hidden="true"></div>
+    <div class="ambient ambient--violet" aria-hidden="true"></div>
+    <div class="ambient ambient--electric" aria-hidden="true"></div>
+    <div class="particles" id="particles" aria-hidden="true"></div>
+
+    <!-- Nav -->
+    <header class="nav">
+      <div class="nav__inner">
+        <a class="nav__logo" href="/" aria-label="CodeBuddy home">
+          <img src="assets/codebuddy-logo.svg" alt="CodeBuddy" />
+        </a>
+        <nav class="nav__links">
+          <a href="#platform">Platform</a>
+          <a href="#solutions">Solutions</a>
+          <a href="#engineers">Engineers</a>
+          <a href="#insights">Insights</a>
+        </nav>
+        <div class="nav__cta">
+          <a href="#signin" class="nav__signin"></a>
+          <a href="#meeting" class="btn btn--primary btn--sm">
+            <i data-lucide="calendar-check"></i>
+            Schedule a Meeting
+            <i data-lucide="arrow-right" class="i-xs"></i>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Grid -->
+    <div class="hero__grid">
+      <!-- Left -->
+      <div class="col-left reveal">
+        <div class="chip">
+          <i data-lucide="sparkles"></i>
+          The Infinite Software Canvas
+        </div>
+
+        <h1 class="headline">
+          Breaking Down
+          <span class="headline__accent">
+            <span class="text-gradient-emerald">Barriers</span>
+            <span class="headline__accent-glow" aria-hidden="true"></span>
+          </span>
+          <br />
+          <span>to Software Development</span>
+        </h1>
+
+        <p class="lede">
+          You bring the ideas and business expertise. CodeBuddy provides the software canvas, expert engineers, and development tools to transform your vision into reliable software—faster, smarter, and with confidence.
+        </p>
+
+        <div class="ctas">
+          <a href="#meeting" class="btn btn--primary">
+            <i data-lucide="calendar-check"></i>
+            Schedule a Meeting
+            <i data-lucide="arrow-right"></i>
+          </a>
+          <a href="#possible" class="btn btn--ghost">
+            See What's Possible
+            <i data-lucide="arrow-right"></i>
+          </a>
+        </div>
+
+        <ul class="features">
+          <li><span class="check"><i data-lucide="check"></i></span>Build Any Business Software</li>
+          <li><span class="check"><i data-lucide="check"></i></span>Professional Engineers Available</li>
+          <li><span class="check"><i data-lucide="check"></i></span>Rapid Development</li>
+          <li><span class="check"><i data-lucide="check"></i></span>Reliable Results</li>
+        </ul>
+
+        <div class="stats">
+          <div class="stat">
+            <!-- <div class="stat__num" data-count="10607" data-suffix="+">0</div>
+            <div class="stat__label">Community Builders</div> -->
+          </div>
+          <div class="stat__sep"></div>
+          <div class="stat">
+            <!-- <div class="stat__num" data-count="103" data-suffix="+">0</div>
+            <div class="stat__label">Products Shipped</div> -->
+          </div>
+          <div class="stat__sep"></div>
+          <div class="stat">
+            <!-- <div class="stat__num" data-count="99" data-suffix="%">0</div>
+            <div class="stat__label">Client Satisfaction</div> -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Right -->
+      <div class="col-right reveal">
+        <div class="panel">
+          <div class="panel__sheen" aria-hidden="true"></div>
+          <div class="panel__head">
+            <div class="dots">
+              <span></span><span></span><span class="dots__live"></span>
+            </div>
+            <span class="live">
+              <span class="live__pulse"><span></span><span></span></span>
+              Live · Building
+            </span>
+          </div>
+          <div class="canvas" id="canvas" aria-hidden="true">
+            <div class="canvas__rings">
+              <div class="ring ring--outer"></div>
+              <div class="ring ring--mid"></div>
+              <div class="ring ring--inner"></div>
+              <div class="ring ring--core"></div>
+            </div>
+            <div class="canvas__glow"></div>
+            <svg class="canvas__lines" viewBox="0 0 100 100" preserveAspectRatio="none">
+              <defs>
+                <linearGradient id="gEmerald" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#00c386" stop-opacity="0"/>
+                  <stop offset="55%" stop-color="#00c386" stop-opacity="0.55"/>
+                  <stop offset="100%" stop-color="#00c386" stop-opacity="0"/>
+                </linearGradient>
+                <linearGradient id="gViolet" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#a06bff" stop-opacity="0"/>
+                  <stop offset="55%" stop-color="#a06bff" stop-opacity="0.45"/>
+                  <stop offset="100%" stop-color="#a06bff" stop-opacity="0"/>
+                </linearGradient>
+                <linearGradient id="gElectric" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#4ea8ff" stop-opacity="0"/>
+                  <stop offset="55%" stop-color="#4ea8ff" stop-opacity="0.45"/>
+                  <stop offset="100%" stop-color="#4ea8ff" stop-opacity="0"/>
+                </linearGradient>
+              </defs>
+            </svg>
+            <div class="orb">
+              <span class="orb__pulse"></span>
+              <span class="orb__pulse orb__pulse--2"></span>
+              <span class="orb__pulse orb__pulse--3"></span>
+              <div class="orb__ring">
+                <div class="orb__core">
+                  <div class="orb__label">Your</div>
+                  <div class="orb__idea">IDEA</div>
+                </div>
+              </div>
+            </div>
+            <!-- module chips injected by JS -->
+          </div>
+        </div>
+        <div class="panel__reflection" aria-hidden="true"></div>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
